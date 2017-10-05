@@ -22,9 +22,7 @@ var _config = require('./src/config');
 
 function _interopRequireDefault(obj) { return obj && obj.__esModule ? obj : { default: obj }; }
 
-//const PORT = 4000;
 var PORT = process.env.PORT || '3000';
-//app.set('port', port);
 
 var server = (0, _express2.default)();
 
