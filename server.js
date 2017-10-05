@@ -6,6 +6,9 @@ import postgraphql from 'postgraphql';
 import { clientUri, databaseConnectionString } from './src/config';
 
 const PORT = 4000;
+const PORT = process.env.PORT || '3000';
+//app.set('port', port);
+
 const server = express();
 
 server.use('*', cors({ origin: clientUri }));
