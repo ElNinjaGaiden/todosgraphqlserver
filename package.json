@@ -4,7 +4,8 @@
   "description": "",
   "main": "server.js",
   "scripts": {
-    "start": "node server",
+    "build": "babel server.js -d dist",
+    "start": "node dist/server",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "author": "",
